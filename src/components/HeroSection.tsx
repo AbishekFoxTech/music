@@ -31,7 +31,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-lg leading-relaxed text-foreground/90 max-w-xl">
-             He is a composer who combines classical traditions with contemporary elements. His work has been performed at venues such as Gayana Samaja, and he has also composed for films. His music is focused on creating experiences that connect different styles and audiences.
+             Sridhar Narasimhan is a composer who combines classical traditions with contemporary elements. His work has been performed at venues such as Gayana Samaja, and he has also composed for films. His music is focused on creating experiences that connect different styles and audiences.
             </p>
 
             <div className="flex flex-wrap gap-4">

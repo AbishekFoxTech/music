@@ -94,10 +94,10 @@ const AboutSection = () => {
                 Musical Excellence Since 1982
               </h3>
               <p className="text-lg leading-relaxed text-foreground/90">
-                He began his musical training at the age of six and has studied both Carnatic and Hindustani classical traditions. Over time, his early interest developed into a career that includes performance, composition, and teaching.
+                Sridhar Narasimhan began his musical training at the age of six and has studied both Carnatic and Hindustani classical traditions. Over time, his early interest developed into a career that includes performance, composition, and teaching.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                He has performed at venues such as Gayana Samaja and Krishna Gana Sabha. His work also includes fusion projects that combine classical and contemporary elements.
+                Sridhar Narasimhan has performed at venues such as Gayana Samaja and Krishna Gana Sabha. His work also includes fusion projects that combine classical and contemporary elements.
               </p>
             </div>
 
