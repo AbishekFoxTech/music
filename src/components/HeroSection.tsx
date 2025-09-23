@@ -31,9 +31,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-lg leading-relaxed text-foreground/90 max-w-xl">
-              Distinguished composer blending classical traditions with modern innovation. 
-              From prestigious venues like Gayana Samaja to cutting-edge film scores, 
-              creating musical experiences that transcend boundaries.
+             He is a composer who combines classical traditions with contemporary elements. His work has been performed at venues such as Gayana Samaja, and he has also composed for films. His music is focused on creating experiences that connect different styles and audiences.
             </p>
 
             <div className="flex flex-wrap gap-4">

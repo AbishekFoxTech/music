@@ -58,7 +58,7 @@ const AboutSection = () => {
             <span className="text-gold-gradient"> Maestro</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A unique blend of classical musical mastery and technological innovation, 
+            A unique blend of classical musical mastery and technological innovation,
             creating harmony between tradition and modernity for over four decades.
           </p>
         </div>
@@ -75,7 +75,7 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
             </div>
-            
+
             {/* Quote Overlay */}
             <div className="absolute -bottom-6 -right-6 bg-card/95 backdrop-blur-sm rounded-2xl p-6 luxury-card max-w-xs">
               <blockquote className="text-2xl font-heading italic text-accent">
@@ -94,15 +94,10 @@ const AboutSection = () => {
                 Musical Excellence Since 1982
               </h3>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Beginning my musical journey at age 6, I've dedicated my life to mastering 
-                both Carnatic and Hindustani classical traditions. What started as childhood 
-                curiosity has evolved into a distinguished career spanning performance, 
-                composition, and education.
+                He began his musical training at the age of six and has studied both Carnatic and Hindustani classical traditions. Over time, his early interest developed into a career that includes performance, composition, and teaching.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                My performances at renowned venues like Gayana Samaja and Krishna Gana Sabha 
-                have been met with critical acclaim, while my fusion work bridges the gap 
-                between classical purity and contemporary innovation.
+                He has performed at venues such as Gayana Samaja and Krishna Gana Sabha. His work also includes fusion projects that combine classical and contemporary elements.
               </p>
             </div>
 
@@ -126,11 +121,11 @@ const AboutSection = () => {
           <h3 className="text-3xl font-heading font-semibold text-center mb-12">
             Musical Journey Timeline
           </h3>
-          
+
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-accent/30" />
-            
+
             <div className="space-y-16">
               {timelineItems.map((item, index) => (
                 <div key={item.year} className={`flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
@@ -153,10 +148,10 @@ const AboutSection = () => {
                       </CardContent>
                     </Card>
                   </div>
-                  
+
                   {/* Timeline Node */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background" />
-                  
+
                   <div className="w-full lg:w-5/12" />
                 </div>
               ))}
