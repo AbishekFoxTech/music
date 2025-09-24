@@ -58,8 +58,9 @@ const AboutSection = () => {
             <span className="text-gold-gradient"> Maestro</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A unique blend of classical musical mastery and technological innovation,
-            creating harmony between tradition and modernity for over four decades.
+            A unique blend of classical musical mastery and technological
+            innovation, creating harmony between tradition and modernity for
+            over four decades.
           </p>
         </div>
 
@@ -94,10 +95,15 @@ const AboutSection = () => {
                 Musical Excellence Since 1982
               </h3>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Sridhar Narasimhan began his musical training at the age of six and has studied both Carnatic and Hindustani classical traditions. Over time, his early interest developed into a career that includes performance, composition, and teaching.
+                Sridhar Narasimhan began his musical training at the age of six
+                and has studied both Carnatic and Hindustani classical
+                traditions. Over time, his early interest developed into a
+                career that includes performance, composition, and teaching.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Sridhar Narasimhan has performed at venues such as Gayana Samaja and Krishna Gana Sabha. His work also includes fusion projects that combine classical and contemporary elements.
+                Sridhar Narasimhan has performed at venues such as Gayana Samaja
+                and Krishna Gana Sabha. His work also includes fusion projects
+                that combine classical and contemporary elements.
               </p>
             </div>
 
@@ -105,7 +111,9 @@ const AboutSection = () => {
               <div className="text-center p-6 luxury-card">
                 <Music className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h4 className="text-xl font-semibold mb-2">Classical Mastery</h4>
-                <p className="text-muted-foreground">Carnatic & Hindustani traditions</p>
+                <p className="text-muted-foreground">
+                  Carnatic & Hindustani traditions
+                </p>
               </div>
               <div className="text-center p-6 luxury-card">
                 <Code className="h-12 w-12 text-accent mx-auto mb-4" />
@@ -123,13 +131,23 @@ const AboutSection = () => {
           </h3>
 
           <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-accent/30" />
+            {/* Timeline Line (Only visible on lg+) */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-accent/30" />
 
             <div className="space-y-16">
               {timelineItems.map((item, index) => (
-                <div key={item.year} className={`flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
-                  <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12'}`}>
+                <div
+                  key={item.year}
+                  className={`flex flex-col lg:flex-row items-center ${
+                    index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                  }`}
+                >
+                  {/* Timeline Card */}
+                  <div
+                    className={`w-full lg:w-5/12 ${
+                      index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
+                    }`}
+                  >
                     <Card className="luxury-card transition-elegant hover:scale-105">
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-4">
@@ -138,19 +156,27 @@ const AboutSection = () => {
                           </div>
                           <div className="flex-1">
                             <div className="flex items-center space-x-2 mb-2">
-                              <span className="text-2xl font-bold text-accent">{item.year}</span>
-                              <span className="text-sm text-muted-foreground">Age {item.age}</span>
+                              <span className="text-2xl font-bold text-accent">
+                                {item.year}
+                              </span>
+                              <span className="text-sm text-muted-foreground">
+                                Age {item.age}
+                              </span>
                             </div>
-                            <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                            <p className="text-muted-foreground">{item.description}</p>
+                            <h4 className="text-xl font-semibold mb-2">
+                              {item.title}
+                            </h4>
+                            <p className="text-muted-foreground">
+                              {item.description}
+                            </p>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
                   </div>
 
-                  {/* Timeline Node */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background" />
+                  {/* Timeline Node (Only on lg) */}
+                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background" />
 
                   <div className="w-full lg:w-5/12" />
                 </div>

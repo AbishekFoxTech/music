@@ -3,49 +3,110 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { useState } from "react";
 
+import picture1 from "@/assets/testimonial-imgs/Picture1.jpg";
+import picture2 from "@/assets/testimonial-imgs/Picture2.jpg";
+import picture3 from "@/assets/testimonial-imgs/Picture3.jpg";
+import picture4 from "@/assets/testimonial-imgs/Picture4.jpg";
+import picture5 from "@/assets/testimonial-imgs/Picture5.jpg";
+import picture6 from "@/assets/testimonial-imgs/Picture6.jpg";
+import picture7 from "@/assets/testimonial-imgs/Picture7.jpg";
+import picture8 from "@/assets/testimonial-imgs/Picture8.jpg";
+import picture9 from "@/assets/testimonial-imgs/Picture9.jpg";
+import picture10 from "@/assets/testimonial-imgs/Picture10.jpg";
+
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const testimonials = [
     {
-      name: "Priya Sharma",
-      role: "Classical Music Student",
-      company: "15 years of training",
-      content: "Under his guidance, I've not only mastered complex ragas but also understood the soul of classical music. His teaching method bridges traditional techniques with modern understanding.",
+      name: "Rakhee Ashwin",
+      role: "Software Engineer",
+      company: "Canada — 1+ years of learning",
+      content:
+        "Sridhar sir is a very experienced and wonderful teacher with a lot of patience and perfection. His commitment to teaching is unexplainable. With good humour he engages students of all ages. I rejoined violin after a 20-year gap and was quickly able to get back to playing with his guidance. I feel very blessed to be his student.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b194?w=150&h=150&fit=crop&crop=face",
+      image: picture1,
     },
     {
-      name: "Rajesh Kumar",
-      role: "Film Director",
-      company: "Bollywood Productions",
-      content: "His background scores have elevated our films to new heights. The way he blends classical elements with contemporary sounds is absolutely magical.",
+      name: "G.M. Kamath",
+      role: "Professor",
+      company: "IIT Kanpur — ~1.5 years of learning",
+      content:
+        "Sridhar sir is both a great Vidwan and an amazing Guru. He is taking forward an illustrious parampara, which I’m privileged to be a small part of.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      image: picture2,
     },
     {
-      name: "Dr. Meera Iyer",
-      role: "Music Academy Director",
-      company: "Chennai Music Academy",
-      content: "A true maestro who has preserved classical traditions while innovating for the future. His contributions to both music and technology are unparalleled.",
+      name: "Adithya G H",
+      role: "Resident Doctor (M.S. General Surgery)",
+      company: "Bangalore — 11 years of learning",
+      content:
+        "Sridhar sir is my Paramaguru. He not only shares deep music knowledge but also shows that music is a way of life. He explains musical concepts, nuances, and genres, while giving new perspectives in every session. I’m very fortunate to be his disciple.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
+      image: picture3,
     },
     {
-      name: "Tech Innovations Ltd",
-      role: "CTO",
-      company: "Tech Consulting Client",
-      content: "His dual expertise in music and technology brought a unique perspective to our projects. Innovative solutions with an artist's attention to detail.",
+      name: "Anurag Sinha",
+      role: "Human Spaceflight Centre",
+      company: "ISRO, Bangalore — 2 years of learning",
+      content:
+        "Sridhar sir brings a unique perspective to violin classes, tailoring his pedagogy to each student. His classes are joyful and filled with both music and life lessons. Students gain exposure not just to Carnatic music but also to Hindustani and Western classical traditions.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      image: picture4,
     },
     {
-      name: "Ananya Rao",
-      role: "Fusion Music Collaborator",
-      company: "Independent Artist",
-      content: "Working on the Ranjaka album was transformative. His ability to respect tradition while pushing boundaries is what makes him extraordinary.",
+      name: "Arvind Balasubramanian",
+      role: "Postdoctoral Fellow, Research in Astrophysics",
+      company: "Indian Institute of Astrophysics — 18 years of learning",
+      content:
+        "Sridhar sir’s unique teaching method blends theory and practice beautifully. His emphasis on vocals, even for violinists, makes the learning experience deeply enriching and holistic.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      image: picture5,
+    },
+    {
+      name: "Sreeramya D",
+      role: "System Software Engineer",
+      company: "Intel, Bengaluru — 11 years of learning",
+      content:
+        "Sridhar Sir is a guru with profound knowledge of Carnatic music. He is patient and ensures that students thoroughly master swaras and sahitya before progressing. Overall, he is a great teacher!",
+      rating: 5,
+      image: picture6,
+    },
+    {
+      name: "Akshay Ravindran",
+      role: "Software Engineer & Performing Artist",
+      company: "NAVEX, Bengaluru — 15+ years of learning",
+      content:
+        "Learning under Sridhar Sir for 15 years has been life-changing. His innovative teaching, dedication, and focus on the synergy of singing and violin have transformed my skills. Every class inspires growth and discovery.",
+      rating: 5,
+      image: picture7,
+    },
+    {
+      name: "Krishna Rao",
+      role: "Product Management Leader",
+      company: "Nokia Networks — 30+ years of learning",
+      content:
+        "Guru and torchbearer of a unique baani that he has inherited, enriched, and shared with students — connecting our sampradaya to shashtreeya sangeetha.",
+      rating: 5,
+      image: picture8,
+    },
+    {
+      name: "Manasa DL",
+      role: "MBA Student",
+      company: "Cardiff University, UK — 11+ years of learning",
+      content:
+        "Sridhar Sir is an incredible teacher with deep knowledge and a personalised approach that brings out the best in every student. His flexible online/offline classes have been invaluable for those abroad.",
+      rating: 5,
+      image: picture9,
+    },
+    {
+      name: "Pushpa H S",
+      role: "Partner Manager",
+      company: "Bangalore — 1+ years of learning",
+      content:
+        "A very professional and patient teacher with a 'can-do' attitude, helping students see the bigger picture of music. His customised approach and group-based teaching make learning engaging and confidence-boosting. If he believes in you, he’ll make you believe in yourself!",
+      rating: 5,
+      image: picture10,
     },
   ];
 
@@ -63,25 +124,23 @@ const TestimonialsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
-            What People
+            What Students
             <span className="text-gold-gradient"> Say</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Testimonials from students, collaborators, and industry professionals 
-            who have experienced the magic of music and innovation.
+            Real words from students and professionals who have learned under Vidwan Sridhar Sir and experienced the transformative power of his teaching.
           </p>
         </div>
 
         {/* Main Testimonial Display */}
         <div className="max-w-4xl mx-auto mb-12 scroll-reveal">
-          <Card className="luxury-card relative overflow-hidden">
+          <Card className="luxury-card relative overflow-hidden min-h-[500px] flex items-center">
             <div className="absolute top-6 left-6 text-accent/20">
               <Quote className="h-16 w-16" />
             </div>
-            
-            <CardContent className="p-12 relative z-10">
+
+            <CardContent className="p-12 relative z-10 w-full">
               <div className="flex flex-col lg:flex-row items-center gap-8">
-                {/* Testimonial Image */}
                 <div className="flex-shrink-0">
                   <img
                     src={testimonials[currentTestimonial].image}
@@ -90,21 +149,17 @@ const TestimonialsSection = () => {
                   />
                 </div>
 
-                {/* Testimonial Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  {/* Rating Stars */}
                   <div className="flex justify-center lg:justify-start mb-4">
                     {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 text-accent fill-current" />
                     ))}
                   </div>
 
-                  {/* Testimonial Text */}
                   <blockquote className="text-xl lg:text-2xl font-light leading-relaxed mb-6 italic">
                     "{testimonials[currentTestimonial].content}"
                   </blockquote>
 
-                  {/* Author Info */}
                   <div className="border-t border-border/50 pt-4">
                     <h4 className="text-lg font-semibold text-accent">
                       {testimonials[currentTestimonial].name}
@@ -132,7 +187,6 @@ const TestimonialsSection = () => {
               <ChevronLeft className="h-4 w-4" />
             </Button>
 
-            {/* Dots Indicator */}
             <div className="flex gap-2">
               {testimonials.map((_, index) => (
                 <button
@@ -180,13 +234,13 @@ const TestimonialsSection = () => {
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </div>
-                
+
                 <div className="flex mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 text-accent fill-current" />
                   ))}
                 </div>
-                
+
                 <p className="text-sm text-muted-foreground line-clamp-3">
                   "{testimonial.content}"
                 </p>
@@ -201,11 +255,11 @@ const TestimonialsSection = () => {
             Ready to Begin Your Musical Journey?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Join hundreds of satisfied students and collaborators. Whether you're interested 
+            Join hundreds of satisfied students and collaborators. Whether you're interested
             in classical training, fusion projects, or film scoring, let's create magic together.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6"
           >
             Start Your Journey
