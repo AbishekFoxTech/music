@@ -132,9 +132,9 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-1 text-muted-foreground text-sm">
-              <span>© {currentYear} Music Maestro. Made with</span>
+              <span>© {currentYear} Sunaada. All rights reserved.</span>
               <Heart className="h-4 w-4 text-accent fill-current" />
-              <span>for music lovers worldwide.</span>
+              <span>Powered by FoxTech Pvt Solutions</span>
             </div>
             
             <div className="flex space-x-6 text-sm">
