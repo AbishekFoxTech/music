@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, Pause, Volume2, VolumeX, Download, ExternalLink } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import studioSetup from "@/assets/studio-setup.jpg";
 
 // ✅ Audio imports
 import irulu from "@/assets/song/Irulu song.mp3";
@@ -13,11 +12,10 @@ import adavi from "@/assets/song/Adavi song.mp3";
 import saiBaba from "@/assets/song/Om Sai Baba song.mp3";
 import mugilu from "@/assets/song/Mugilu Karmik.mp3";
 
-
+// ✅ Images
 import adaviimg from "@/assets/song/Adavi img.png";
 import vishwabharathiimg from "@/assets/song/Vishwabharathi img.jpg";
 import ganeshamimg from "@/assets/song/Ganesham img.jpg";
-
 
 const MusicSection = () => {
   const [currentlyPlaying, setCurrentlyPlaying] = useState<string | null>(null);
@@ -80,7 +78,7 @@ const MusicSection = () => {
     }
   };
 
-  // ✅ Update progress and duration
+  // ✅ Update progress & duration
   useEffect(() => {
     Object.entries(audioRefs.current).forEach(([trackId, audio]) => {
       if (!audio) return;
@@ -149,13 +147,13 @@ const MusicSection = () => {
 
   return (
     <section id="music" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="text-center mb-16 px-4">
           <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
             Musical <span className="text-gold-gradient">Portfolio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Explore a diverse collection spanning classical traditions, innovative fusion, 
+            Explore a diverse collection spanning classical traditions, innovative fusion,
             and educational content that has touched countless lives.
           </p>
         </div>
@@ -165,14 +163,15 @@ const MusicSection = () => {
             key={category.id}
             className={`flex flex-col lg:flex-row gap-12 items-center ${
               index % 2 === 1 ? "lg:flex-row-reverse" : ""
-            } mb-16`}
+            } mb-20 px-4 lg:px-8`}
           >
-            <div className="lg:w-1/2">
-              <div className="relative overflow-hidden rounded-2xl">
+            {/* 🎵 Left Image */}
+            <div className="lg:w-1/2 w-full">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-[400px] object-cover"
+                  className="w-full h-[300px] sm:h-[400px] object-cover"
                 />
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <h3 className="text-2xl font-bold">{category.title}</h3>
@@ -181,7 +180,8 @@ const MusicSection = () => {
               </div>
             </div>
 
-            <div className="lg:w-1/2 space-y-6">
+            {/* 🎵 Right Tracks */}
+            <div className="lg:w-1/2 w-full space-y-6">
               <h3 className="text-3xl font-semibold">{category.title}</h3>
               <p className="text-lg text-muted-foreground">{category.description}</p>
 
@@ -195,9 +195,9 @@ const MusicSection = () => {
                   const vol = volume[trackId] ?? 1;
 
                   return (
-                    <Card key={trackId}>
-                      <CardContent className="p-4">
-                        <div className="flex items-center justify-between">
+                    <Card key={trackId} className="shadow-md">
+                      <CardContent className="p-4 sm:p-6">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                           <div className="flex items-center space-x-4 flex-1">
                             <Button size="sm" variant="ghost" onClick={() => togglePlay(trackId)}>
                               {currentlyPlaying === trackId ? (
@@ -207,7 +207,7 @@ const MusicSection = () => {
                               )}
                             </Button>
 
-                            <div className="flex-1">
+                            <div className="flex-1 min-w-[140px]">
                               <h4 className="font-semibold">{track.name}</h4>
                               <p className="text-sm text-muted-foreground">
                                 {track.venue} • {track.duration}
@@ -215,8 +215,8 @@ const MusicSection = () => {
                             </div>
                           </div>
 
-                          {/* 🔊 Volume Control */}
-                          <div className="flex items-center space-x-2 w-32">
+                          {/* 🔊 Volume + Download */}
+                          <div className="flex items-center space-x-2 w-full sm:w-40">
                             <Button size="sm" variant="ghost" onClick={() => toggleMute(trackId)}>
                               {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
                             </Button>
@@ -237,7 +237,7 @@ const MusicSection = () => {
                           </div>
                         </div>
 
-                        {/* ✅ Seekable Progress Bar */}
+                        {/* ✅ Seek bar */}
                         <div
                           className="mt-4 cursor-pointer select-none"
                           onClick={(e) => handleSeek(e, trackId)}
@@ -265,7 +265,8 @@ const MusicSection = () => {
                 })}
               </div>
 
-              <div className="flex gap-4">
+              {/* 🎵 CTA Buttons */}
+              <div className="flex flex-wrap gap-4 pt-4">
                 <Button className="bg-accent hover:bg-accent/90">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View Full Collection

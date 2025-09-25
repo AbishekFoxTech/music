@@ -72,7 +72,7 @@ const ContactSection = () => {
             <span className="text-gold-gradient"> Magic Together</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Whether you're seeking musical instruction, film scoring, or innovative 
+            Whether you're seeking musical instruction, film scoring, or innovative
             collaborations, I'm here to bring your vision to life.
           </p>
         </div>
@@ -179,7 +179,7 @@ const ContactSection = () => {
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center">
-                    By submitting this form, you agree to receive communications about 
+                    By submitting this form, you agree to receive communications about
                     your inquiry. Your information is kept confidential.
                   </p>
                 </form>
@@ -246,28 +246,28 @@ const ContactSection = () => {
         </div>
 
         {/* Social Media & Additional Info */}
-<div className="mt-16 text-center scroll-reveal">
-  <h3 className="text-2xl font-heading font-semibold mb-6">
-    Connect on Social Media
-  </h3>
-  <div className="flex justify-center flex-wrap gap-4 mb-8">
-    {["YouTube", "Instagram", "LinkedIn", "Facebook", "Twitter"].map(
-      (platform) => (
-        <Button
-          key={platform}
-          variant="outline"
-          className="border-accent/50 text-accent hover:bg-accent hover:text-accent-foreground"
-        >
-          {platform}
-        </Button>
-      )
-    )}
-  </div>
-  <p className="text-muted-foreground max-w-2xl mx-auto">
-    Follow my musical journey, watch performance videos, and stay updated 
-    with the latest compositions and educational content.
-  </p>
-</div>
+        <div className="mt-16 text-center scroll-reveal">
+          <h3 className="text-2xl font-heading font-semibold mb-6">
+            Connect on Social Media
+          </h3>
+          <div className="flex justify-center flex-wrap gap-4 mb-8">
+            {["YouTube", "Instagram", "LinkedIn", "Facebook", "Twitter"].map(
+              (platform) => (
+                <Button
+                  key={platform}
+                  variant="outline"
+                  className="border-accent/50 text-accent hover:bg-accent hover:text-accent-foreground"
+                >
+                  {platform}
+                </Button>
+              )
+            )}
+          </div>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Follow my musical journey, watch performance videos, and stay updated
+            with the latest compositions and educational content.
+          </p>
+        </div>
 
       </div>
     </section>
