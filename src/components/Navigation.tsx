@@ -35,29 +35,29 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-elegant ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+      <div className="w-full max-w-full px-4 sm:px-6 py-4">
+        <div className="flex items-center justify-between flex-nowrap">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Music className="h-8 w-8 text-accent" />
-            <span className="text-xl font-heading font-semibold text-gold-gradient">
+          <div className="flex items-center space-x-2 min-w-0">
+            <Music className="h-8 w-8 text-accent flex-shrink-0" />
+            <span className="text-lg sm:text-xl font-heading font-semibold text-gold-gradient truncate">
               Music Maestro
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground/80 hover:text-accent transition-smooth font-medium"
+                className="text-sm lg:text-base text-foreground/80 hover:text-accent transition-smooth font-medium"
               >
                 {item.label}
               </button>
@@ -68,7 +68,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden flex-shrink-0 ml-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -78,24 +78,22 @@ const Navigation = () => {
             )}
           </Button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left text-foreground/80 hover:text-accent transition-smooth font-medium py-2"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Navigation (appears below navbar) */}
+      {isMobileMenuOpen && (
+        <div className="fixed top-16 left-0 right-0 bottom-0 bg-background/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 md:hidden z-40">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="text-xl sm:text-2xl text-foreground/90 hover:text-accent transition-smooth font-semibold"
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
