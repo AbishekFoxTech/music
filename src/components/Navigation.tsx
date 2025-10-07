@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Music } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Logo from "@/assets/logo.svg"; // ✅ Import your SVG logo
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,21 +35,24 @@ const Navigation = () => {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border"
-          : "bg-transparent"
-      }`}
-    >
+   <nav
+  className={`fixed top-0 left-0 right-0 z-50 transition-all ${
+    isScrolled
+      ? "bg-card/90 backdrop-blur-md border-b border-border" // lighter than background
+      : "bg-transparent"
+  }`}
+>
+
       <div className="w-full max-w-full px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between flex-nowrap">
           {/* Logo */}
           <div className="flex items-center space-x-2 min-w-0">
-            <Music className="h-8 w-8 text-accent flex-shrink-0" />
-            <span className="text-lg sm:text-xl font-heading font-semibold text-gold-gradient truncate">
-              Music Maestro
-            </span>
+            <img
+              src={Logo}
+              alt="Music Maestro Logo"
+              className="h-10 w-22 object-cover flex-shrink-0"
+            />
+           
           </div>
 
           {/* Desktop Navigation */}
@@ -80,7 +84,7 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation (appears below navbar) */}
+      {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="fixed top-16 left-0 right-0 bottom-0 bg-background/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 md:hidden z-40">
           {navItems.map((item) => (
