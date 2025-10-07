@@ -50,7 +50,7 @@ const Navigation = () => {
             <img
               src={Logo}
               alt="Music Maestro Logo"
-              className="h-10 w-22 object-cover flex-shrink-0"
+              className="h-10 w-13 object-cover flex-shrink-0"
             />
            
           </div>
