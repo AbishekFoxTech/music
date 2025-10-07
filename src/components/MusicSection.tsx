@@ -198,7 +198,7 @@ const MusicSection = () => {
                     <Card key={trackId} className="shadow-md">
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                          <div className="flex items-center space-x-4 flex-1">
+                          <div className="flex items-center space-x-4 flex-1 ">
                             <Button size="sm" variant="ghost" onClick={() => togglePlay(trackId)}>
                               {currentlyPlaying === trackId ? (
                                 <Pause className="h-4 w-4" />

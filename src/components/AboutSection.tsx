@@ -148,7 +148,7 @@ const AboutSection = () => {
                       index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
                     }`}
                   >
-                    <Card className="luxury-card transition-elegant hover:scale-105">
+                    <Card className="luxury-card-t transition-elegant hover:scale-105">
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-4">
                           <div className="bg-accent/20 p-3 rounded-lg">

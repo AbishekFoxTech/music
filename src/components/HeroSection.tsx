@@ -25,7 +25,7 @@ const HeroSection = () => {
                 Where Music
                 <span className="text-gold-gradient musical-decoration"> Meets Magic</span>
               </h1>
-              <p className="text-xl text-muted-foreground font-light">
+              <p className="text-xl text-muted-foreground font-light text-white">
                 41 Years of Musical Excellence | 27 Years of Tech Leadership
               </p>
             </div>
