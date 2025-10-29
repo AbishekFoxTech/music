@@ -8,7 +8,10 @@ import FilmsSection from "@/components/FilmsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-
+import PerformancesSection from "@/components/PerformanceSection";
+import MusicTeachingSection from "@/components/MusicTeachingSection";
+import TechnologyMusic from "@/components/TechnologyMusic";
+import RecognitionSection from "@/components/RecognitionSection";
 const PortfolioHomepage = () => {
   useEffect(() => {
     // Scroll reveal animation on mount
@@ -42,9 +45,15 @@ const PortfolioHomepage = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <RecognitionSection/>
+<TechnologyMusic/>
+        <PerformancesSection/>
         <MusicSection />
         <FilmsSection />
+
         <GallerySection />
+  <MusicTeachingSection/>
+
         <TestimonialsSection />
         <ContactSection />
       </main>

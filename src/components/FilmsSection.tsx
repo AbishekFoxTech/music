@@ -98,9 +98,10 @@ const FilmsSection = () => {
             Film Industry
             <span className="text-gold-gradient"> Portfolio</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Bringing stories to life through music. From background scores to complete 
-            musical direction, crafting audio experiences that elevate cinematic narratives.
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+           Since 2018, Sridhar has dedicated himself full-time to music, expanding into composition, 
+production, and direction for films and independent projects. His work covers background scores 
+(BGM), sound effects (SFX), song composition, and lyric writing. 
           </p>
         </div>
 

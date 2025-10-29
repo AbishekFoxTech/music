@@ -54,13 +54,13 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
-            About the
-            <span className="text-gold-gradient"> Maestro</span>
+            About
+            <span className="text-gold-gradient"> Sridhar Narasimhan</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A unique blend of classical musical mastery and technological
-            innovation, creating harmony between tradition and modernity for
-            over four decades.
+            A dedicated musician and teacher, Sridhar Narasimhan has devoted over four decades to the art of
+            music. Trained from the age of six, he has built a multifaceted career as a violinist, vocalist,
+            composer, and mentor, shaping his journey through performance, teaching, and music production.
           </p>
         </div>
 
@@ -92,18 +92,19 @@ const AboutSection = () => {
           <div className="space-y-8 scroll-reveal">
             <div className="space-y-6">
               <h3 className="text-3xl font-heading font-semibold">
-                Musical Excellence Since 1982
+                Musical Foundations
               </h3>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Sridhar Narasimhan began his musical training at the age of six
-                and has studied both Carnatic and Hindustani classical
-                traditions. Over time, his early interest developed into a
-                career that includes performance, composition, and teaching.
+                Sridhar began learning the violin at age six under Sri A. V. Venkataramanaiah and Sangeeta Kala
+                Ratna R. R. Keshavamurthy, later continuing under Padma Bhushan Parur M. S. Gopalakrishnan. His
+                training, rooted in the Gayaki style, blends the intricacies of Carnatic and Hindustani music
+                traditions.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Sridhar Narasimhan has performed at venues such as Gayana Samaja
-                and Krishna Gana Sabha. His work also includes fusion projects
-                that combine classical and contemporary elements.
+               He gave his first public performance at Gayana Samaja, Bengaluru, at age eleven, marking the start 
+of a performing career that has since included numerous solo and accompaniment concerts for 
+leading artists such as Bombay Sisters, Sikkil Sisters, C. V. Madhuranath, M. T. Selvanarayana, 
+Kurudi Venkannachar, and B. N. Suresh. 
               </p>
             </div>
 
@@ -138,15 +139,13 @@ const AboutSection = () => {
               {timelineItems.map((item, index) => (
                 <div
                   key={item.year}
-                  className={`flex flex-col lg:flex-row items-center ${
-                    index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                  }`}
+                  className={`flex flex-col lg:flex-row items-center ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                    }`}
                 >
                   {/* Timeline Card */}
                   <div
-                    className={`w-full lg:w-5/12 ${
-                      index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
-                    }`}
+                    className={`w-full lg:w-5/12 ${index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
+                      }`}
                   >
                     <Card className="luxury-card-t transition-elegant hover:scale-105">
                       <CardContent className="p-6">

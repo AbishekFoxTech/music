@@ -133,8 +133,8 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Main Testimonial Display */}
-        <div className="max-w-4xl mx-auto mb-12 scroll-reveal">
-          <Card className="luxury-card relative overflow-hidden min-h-[500px] flex items-center">
+        <div className="max-w-6xl mx-auto mb-12 scroll-reveal">
+          <Card className="luxury-card relative overflow-hidden min-h-[400px] flex items-center">
             <div className="absolute top-6 left-6 text-accent/20">
               <Quote className="h-16 w-16" />
             </div>

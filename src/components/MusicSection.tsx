@@ -57,7 +57,7 @@ const MusicSection = () => {
       description: "Sample lessons and masterclasses from years of dedicated teaching",
       tracks: [
         { name: "Mugilu Karmik", duration: "5:45", venue: "Cloud Studio", src: mugilu },
-        { name: "Irulu (Reprise)", duration: "4:30", venue: "Encore Performance", src: irulu },
+        { name: "Ranjaka (2018)", duration: "4:30", venue: "Encore Performance", src: irulu },
         { name: "Vishwabharathi (Live)", duration: "5:12", venue: "Special Event", src: vishwabharathi },
       ],
       image: ganeshamimg,
@@ -152,9 +152,10 @@ const MusicSection = () => {
           <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
             Musical <span className="text-gold-gradient">Portfolio</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Explore a diverse collection spanning classical traditions, innovative fusion,
-            and educational content that has touched countless lives.
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Sridhar Narasimhan’s body of work spans classical performance, fusion collaborations, film 
+composition, and music education. His portfolio reflects a commitment to both preserving musical 
+heritage and exploring new creative directions. 
           </p>
         </div>
 

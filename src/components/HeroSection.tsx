@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-background/80" />
       </div>
-      
+
       <div className="relative z-10 container mx-auto px-6 py-32 flex items-center min-h-screen">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           {/* Text Content */}
@@ -26,25 +26,29 @@ const HeroSection = () => {
                 <span className="text-gold-gradient musical-decoration"> Meets Magic</span>
               </h1>
               <p className="text-xl text-muted-foreground font-light text-white">
-                41 Years of Musical Excellence | 27 Years of Tech Leadership
+                40+ Years of Musical Odyssey | 27 Years of Tech Leadership
               </p>
             </div>
 
             <p className="text-lg leading-relaxed text-foreground/90 max-w-xl">
-             Sridhar Narasimhan is a composer who combines classical traditions with contemporary elements. His work has been performed at venues such as Gayana Samaja, and he has also composed for films. His music is focused on creating experiences that connect different styles and audiences.
+              Sridhar Narasimhan, a Carnatic violinist, vocalist, and composer, blends classical traditions with
+              contemporary elements to push the boundaries of South Indian classical music. Through innovative
+              compositions and cross-genre collaborations, he creates immersive musical experiences that connect
+              diverse styles and audiences. His work spans performance, teaching, and composition, reflecting a
+              lifelong dedication to evolving and sharing the art of music .
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg"
                 onClick={() => scrollToSection("music")}
               >
                 <Play className="mr-2 h-5 w-5" />
                 Explore Music
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-6 text-lg"
                 onClick={() => scrollToSection("contact")}
@@ -82,7 +86,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
               </div>
             </div>
-            
+
             {/* Decorative Elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl animate-pulse" />
             <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-pulse delay-1000" />
