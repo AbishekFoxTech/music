@@ -1,14 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Play, 
-  Pause, 
-  Volume2, 
-  ExternalLink, 
-  Film, 
-  Music, 
-  Headphones, 
+import {
+  Play,
+  Pause,
+  Volume2,
+  ExternalLink,
+  Film,
+  Music,
+  Headphones,
   FileText,
   Award,
   Calendar
@@ -23,7 +23,7 @@ const FilmsSection = () => {
   const filmProjects = [
     {
       id: "film-1",
-      title: "Rhythm of Heritage",
+      title: "Raathroraathri ",
       genre: "Cultural Drama",
       year: "2023",
       role: ["Background Score", "Song Composition"],
@@ -36,7 +36,7 @@ const FilmsSection = () => {
     },
     {
       id: "film-2",
-      title: "Tech Innovators",
+      title: "Neena",
       genre: "Documentary",
       year: "2022",
       role: ["Background Score", "SFX"],
@@ -47,7 +47,7 @@ const FilmsSection = () => {
       trailer: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
       awards: ["Jury Choice Award - Documentary Film Festival 2023"],
     },
-    
+
   ];
 
   const serviceCategories = [
@@ -99,9 +99,9 @@ const FilmsSection = () => {
             <span className="text-gold-gradient"> Portfolio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-           Since 2018, Sridhar has dedicated himself full-time to music, expanding into composition, 
-production, and direction for films and independent projects. His work covers background scores 
-(BGM), sound effects (SFX), song composition, and lyric writing. 
+            Since 2018, Sridhar has dedicated himself full-time to music, expanding into composition,
+            production, and direction for films and independent projects. His work covers background scores
+            (BGM), sound effects (SFX), song composition, and lyric writing.
           </p>
         </div>
 
@@ -136,9 +136,8 @@ production, and direction for films and independent projects. His work covers ba
           {filmProjects.map((project, index) => (
             <div
               key={project.id}
-              className={`scroll-reveal grid lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
-              }`}
+              className={`scroll-reveal grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
+                }`}
             >
               {/* Project Visual */}
               <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
@@ -149,7 +148,7 @@ production, and direction for films and independent projects. His work covers ba
                       alt={project.title}
                       className="w-full h-[400px] object-cover"
                     />
-                    
+
                     {/* Video Overlay */}
                     {project.trailer && (
                       <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -169,12 +168,11 @@ production, and direction for films and independent projects. His work covers ba
                     )}
 
                     {/* Status Badge */}
-                    <Badge 
-                      className={`absolute top-4 right-4 ${
-                        project.status === "Released" 
-                          ? "bg-green-500/90 text-white" 
+                    <Badge
+                      className={`absolute top-4 right-4 ${project.status === "Released"
+                          ? "bg-green-500/90 text-white"
                           : "bg-accent/90 text-accent-foreground"
-                      }`}
+                        }`}
                     >
                       {project.status}
                     </Badge>
@@ -196,7 +194,7 @@ production, and direction for films and independent projects. His work covers ba
                       {project.year}
                     </Badge>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.role.map((role, roleIndex) => (
                       <Badge key={roleIndex} className="bg-primary/20 text-primary border-primary/30">
@@ -240,7 +238,7 @@ production, and direction for films and independent projects. His work covers ba
                 {/* Action Buttons */}
                 <div className="flex gap-4">
                   {project.trailer && (
-                    <Button 
+                    <Button
                       className="bg-accent hover:bg-accent/90"
                       onClick={() => toggleVideo(project.id)}
                     >
@@ -266,17 +264,17 @@ production, and direction for films and independent projects. His work covers ba
                 Ready to Score Your Next Film?
               </h3>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Bring your cinematic vision to life with music that moves audiences. 
-                From intimate documentaries to grand feature films, let's create an 
+                Bring your cinematic vision to life with music that moves audiences.
+                From intimate documentaries to grand feature films, let's create an
                 unforgettable audio experience together.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 px-8">
                   Discuss Your Project
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
+                <Button
+                  size="lg"
+                  variant="outline"
                   className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8"
                 >
                   View Portfolio Reel
