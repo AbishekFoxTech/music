@@ -2,7 +2,7 @@ import { Code2, Music } from "lucide-react";
 
 const TechnologyMusic = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-2 bg-background">
+    <section className=" flex items-center justify-center px-4 py-12 bg-background ">
       <div className="max-w-5xl w-full">
         <div className="luxury-card rounded-2xl p-8 md:p-12 backdrop-blur-sm">
           {/* Section Title */}

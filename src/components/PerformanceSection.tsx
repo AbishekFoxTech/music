@@ -2,7 +2,7 @@ import { Music2, Radio, Users, MapPin, Mic } from "lucide-react";
 
 const PerformancesSection = () => {
   return (
-    <section className="section-gradient py-4 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="section-gradient py-4 px-4 sm:px-6 lg:px-8 relative overflow-hidden mt-10">
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 text-9xl text-accent/5 font-heading">♪</div>
       <div className="absolute bottom-20 right-10 text-9xl text-accent/5 font-heading">♫</div>
